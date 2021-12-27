@@ -1,0 +1,30 @@
+
+.loading-container {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    width: 100%;
+    outline: none;
+    z-index: 9999;
+    position: fixed;
+    background-color: rgba(0,0,0,0);
+}
+  
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+}
+  
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 40% { 
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
+}
+  
+  

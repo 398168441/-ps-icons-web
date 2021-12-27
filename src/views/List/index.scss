@@ -1,0 +1,36 @@
+
+.list-page {
+	padding: 10px;
+
+	&__top {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+	&__theme {
+		flex: auto;
+	}
+
+	&__batch {
+		margin-right: 20px;
+	}
+
+	&__search {
+		flex: auto;
+		width: 300px;
+	}
+
+	&__tag-select {
+		flex: auto;
+		margin-left: 20px;
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		max-height: calc(100vh - 150px);
+		margin-top: 10px;
+		overflow: auto;
+	}
+}

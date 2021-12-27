@@ -1,0 +1,12 @@
+.tag-list {
+    &__new {
+        background: #fff;
+        border-style: dashed;
+        cursor: pointer;
+    }
+
+    & .ant-select-combobox .ant-select-search__field {
+        width: 100px;
+        height: 24px;
+    }
+}

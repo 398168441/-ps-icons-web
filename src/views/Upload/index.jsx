@@ -27,8 +27,8 @@ const List = ({ loading, uploadIcons, checkIcons, getTags, history }) => {
       message.error("文件名不能以特殊字符开头");
       return;
     }
-    if (fileList.some((file) => file.size > 6 * 1024)) {
-      message.error("文件大小不能超过6kb");
+    if (fileList.some((file) => file.size > 10 * 1024)) {
+      message.error("文件大小不能超过10kb");
       return;
     }
 
@@ -83,7 +83,7 @@ const List = ({ loading, uploadIcons, checkIcons, getTags, history }) => {
           </div>
         </Upload>
         <div className="upload-page__tip">
-          <p>仅支持svg格式,大小不超过6kb</p>
+          <p>仅支持svg格式,大小不超过10kb</p>
           <p>
             支持批量上传，上传图标自动转换中文为拼音(文件名不能包含除了中划线-和下划线_外的特殊字符)
           </p>

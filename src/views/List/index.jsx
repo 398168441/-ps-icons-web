@@ -73,7 +73,7 @@ const List = ({
       };
     });
     console.log("==icons==", icons);
-    // exportSvg(icons)
+    // exportSvg(icons);
   };
 
   const handleDelete = async () => {
@@ -126,13 +126,13 @@ const List = ({
           >
             批量添加分类
           </Button>
-          <Button
+          {/* <Button
             type="link"
             disabled={selectedItems.length === 0 || loading}
             onClick={handleDownload}
           >
             批量下载
-          </Button>
+          </Button> */}
           <Popconfirm
             title={`确定删除选中的 ${selectedItems.length} 项图标?`}
             onConfirm={handleDelete}

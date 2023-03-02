@@ -68,6 +68,11 @@ const List = ({ loading, uploadIcons, checkIcons, getTags, history }) => {
   return (
     <Spin spinning={loading}>
       <main className="upload-page">
+        <div className="upload-page__back">
+          <Link to="/list" replace={true}>
+            <Button>返回首页</Button>
+          </Link>
+        </div>
         <Upload
           listType="picture-card"
           accept="image/svg+xml"
@@ -96,9 +101,6 @@ const List = ({ loading, uploadIcons, checkIcons, getTags, history }) => {
           onChange={setTags}
         />
         <div className="upload-page__btns">
-          <Link to="/list" replace={true}>
-            <Button>取消</Button>
-          </Link>
           <Button
             type="primary"
             onClick={() => handleUpload(true)}
